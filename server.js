@@ -7,15 +7,14 @@ const actionRoute = require('./data/routes/actionRoute');
 const projectRoute = require('./data/routes/projectRoute')
 
 
-
-// server.get('/', (req, res) => {
-//   res.send('Testing One Two Three!');
-// });
-
+//middleware here
 server.use(helmet());
 server.use(cors());
 server.use(express.json());
 
+server.get("/", (req, res) => {
+  res.send("Testing One Two Three!");
+});
 
 
 
