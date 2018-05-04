@@ -1,4 +1,9 @@
 {
+  "name": "Sprint-Challenge-Node-Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "helmet": "^3.12.0",
